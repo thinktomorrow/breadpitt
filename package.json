@@ -1,0 +1,24 @@
+{
+  "name": "breadpitt",
+  "version": "1.0.0",
+  "description": "Een slack bot om broodjes te bestellen",
+  "main": "index.js",
+  "dependencies": {
+     "request": "^2.65.0",
+     "slack-terminalize": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alberttomasiak/breadpitt.git"
+  },
+  "author": "Albert Tomasiak - Stagair, Entrepreneur, Genius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alberttomasiak/breadpitt/issues"
+  },
+  "homepage": "https://github.com/alberttomasiak/breadpitt#readme"
+}
