@@ -1,0 +1,9 @@
+/media
+/node_modules
+/vendor
+/opt
+/sys
+swapfile
+/swapfile
+.vagrant
+/run
