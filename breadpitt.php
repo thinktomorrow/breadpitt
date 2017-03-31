@@ -31,17 +31,11 @@ $botman->hears('vergeet mij', function($bot){
     $bot->userStorage()->delete();
 });
 
-$botman->hears('menu', 'App\Http\Controllers\BreadController@getMenu');
-$botman->hears('ik wil bestellen bij {bestemming}', 'App\Http\Controllers\BreadController@getRestaurant');
+// Regular expressions
+$botman->hears(preg_match('/menu|bestellen|bestelling|order/ig'), 'App\Http\Controllers\BreadController@getMenu');
+//$botman->hears(preg_match('/bestellen|bestelling|order/ig'), 'App\Http\Controllers\BreadController@askRestaurant');
 
-/*$botman->fallback(function($bot) {
-    $bot->reply('Sorry ik begrijp niet wat je wil zeggen.');
-});*/
-
-/*$botman->hears('convo', function($bot) {
-    $bot->startConversation(new ExampleConversation());
-});*/
-
+// $botman->hears('ik wil bestellen bij {bestemming}', 'App\Http\Controllers\BreadController@getRestaurant');
 
 // Start listening to our mighty commands
 $loop->run();

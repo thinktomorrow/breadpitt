@@ -19,6 +19,7 @@ class BreadController extends Controller
             self::$bestemming == "link21" ? $bot->reply('Het menu voor '.self::$bestemming. ': '. self::$link21menu) : '';
         }
     }
+
     public function getRestaurant($bot, $bestemming){
         switch($bestemming){
             case "benvolios":
